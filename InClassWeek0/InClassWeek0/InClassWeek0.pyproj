@@ -1,0 +1,62 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>d88e6501-6d69-4922-8a65-1196bab2bd41</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>InClassWeek0.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>InClassWeek0</Name>
+    <RootNamespace>InClassWeek0</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="ArithmeticProgression.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Base.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FibonacciProgression.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="InClassWeek0.py" />
+    <Compile Include="Polygon.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Progression.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Rectangle.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Square.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Treble.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="What.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
