@@ -1,4 +1,4 @@
-class Polygon(object):
+class Polygon():
     """description of class"""
     def __init__(self, name, number_of_sides):
         self._name = name
@@ -6,11 +6,12 @@ class Polygon(object):
     
     def get_area(self):
         """returns the area of the polygon"""
-
+    
     def get_perimeter(self):
-        return 0
+        """returns the perimeter of the polygon"""
 
     def get_name(self):
+        """returns the provided named"""
         return self._name
 
     def get_number_of_sides(self):
