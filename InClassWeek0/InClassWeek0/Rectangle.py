@@ -4,7 +4,7 @@ class Rectangle(Polygon):
     """description of class"""
 
     def __init__(self, name, number_of_sides, length, width):
-        Polygon.__init__(self, name, number_of_sides)
+        super().__init__(name, number_of_sides)
         self._length = length
         self._width = width
 
