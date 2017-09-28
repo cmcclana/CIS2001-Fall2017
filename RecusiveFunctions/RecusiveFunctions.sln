@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "RecusiveFunctions", "RecusiveFunctions\RecusiveFunctions.pyproj", "{034608BD-19E7-4328-80F6-DE767339C409}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{034608BD-19E7-4328-80F6-DE767339C409}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{034608BD-19E7-4328-80F6-DE767339C409}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {10AE1F2A-5578-453A-BD37-9D466ACF9463}
+	EndGlobalSection
+EndGlobal
