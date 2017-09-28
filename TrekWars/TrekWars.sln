@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "TrekWars", "TrekWars\TrekWars.pyproj", "{583A160B-B4BE-4DA9-B3B6-142DE03B813A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{583A160B-B4BE-4DA9-B3B6-142DE03B813A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{583A160B-B4BE-4DA9-B3B6-142DE03B813A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0D2B4DD7-07AB-4589-8292-5711785A0BDC}
+	EndGlobalSection
+EndGlobal
