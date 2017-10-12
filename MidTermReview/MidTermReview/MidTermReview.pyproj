@@ -2,15 +2,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>3a6c0fe3-f0a3-48be-9cfa-365ded08d408</ProjectGuid>
+    <ProjectGuid>1b194c9a-b26d-4305-993f-eefab905ac22</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>quick_trick_block_stack.py</StartupFile>
+    <StartupFile>MidTermReview.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
-    <Name>StacksAndQueues</Name>
-    <RootNamespace>StacksAndQueues</RootNamespace>
+    <Name>MidTermReview</Name>
+    <RootNamespace>MidTermReview</RootNamespace>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -21,22 +21,7 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="FizzyBizzy.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Queue.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="quick_trick_block_stack.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Stack.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="StacksAndQueues.py" />
-    <Compile Include="test1.py">
-      <SubType>Code</SubType>
-    </Compile>
+    <Compile Include="MidTermReview.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
