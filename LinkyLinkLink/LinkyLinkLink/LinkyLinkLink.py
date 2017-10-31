@@ -1,4 +1,52 @@
 class LinkedList:
+    class Position():
+        def  __init__(self, container, node):
+            self._container = container
+            self._node = node
+
+        def element(self):
+            return self._node.data
+
+        def __eq__(self, other):
+            return type(other) is type(self) and other._node is self._node
+
+        def __ne__(self, other):
+            return not ( self == other )
+
+    def _validate(self, p):
+        if not isinstance(p, self.Position):
+            raise TypeError("p must be a Position type")
+        if p._container is not self:
+            raise ValueError("p does not belong to this list")
+        if p._node is self.start_node:
+            raise ValueError("p is no longer valid")
+        return p._node
+
+    def _make_position(self, node):
+        if node is self.start_node:
+            return None
+        return self.Position(self, node)
+
+    def first(self):
+        return self._make_position(self.start_node.next)
+
+    def last(self):
+        return self._make_position(self.start_node.previous)
+
+    def before(self, p):
+        node = self._validate(p)
+        return self._make_position(node.previous)
+
+    def after(self, p):
+        node = self._validate(p)
+        return self._make_position(node.next)
+
+    def __iter__(self):
+        cursor = self.first()
+        while cursor is not None:
+            yield cursor.element()
+            cursor = self.after(cursor)
+    
     def __init__(self):
         self.start_node = Node()
         self.start_node.previous = self.start_node
@@ -10,12 +58,14 @@ class LinkedList:
         new_node.previous.next = new_node
         new_node.next.previous = new_node
         self.size += 1
+        return self._make_position(new_node)
 
     def add_back(self, item):
         new_node = Node(previous=self.start_node.previous, data=item, next=self.start_node)
         new_node.previous.next = new_node
         new_node.next.previous = new_node
         self.size += 1
+        return self._make_position(new_node)
 
     def peek_front(self):
         return self.start_node.next.data
