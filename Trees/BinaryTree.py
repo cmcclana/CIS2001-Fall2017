@@ -1,6 +1,6 @@
 from Tree import *
 
-class BinaryTree(Tree.Tree):
+class BinaryTree(Tree):
 
     def right(self, p):
         #return Tree to the right of the current position
