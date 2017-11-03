@@ -66,6 +66,18 @@ class LinkedList:
         new_node.next.previous = new_node
         self.size += 1
         return self._make_position(new_node)
+    
+    def add_before(self, p, item):
+        node = self._validate(p)
+        new_node = Node(node.previous, item, node)
+        new_node.previous.next = new_node
+        new_node.next.previous = new_node
+        
+    def add_before(self, p, item):
+        node = self._validate(p)
+        new_node = Node(node, item, node.next)
+        new_node.previous.next = new_node
+        new_node.next.previous = new_node
 
     def peek_front(self):
         return self.start_node.next.data
