@@ -1,4 +1,4 @@
-from LInkedBinaryTrree import *
+from BinarySearchTree import *
 
 
 def print_position(tree, position):
@@ -12,12 +12,12 @@ def print_tree(tree):
 
 
 
-bTree = LinkedBinaryTree()
+bTree = BinarySearchTree()
 
-position = bTree.add_root(50)
-left = bTree.add_left(position, 40)
-right = bTree.add_right(position, 60)
-bTree.add_right(right, 20)
-bTree.add_left(left, 100)
+position = bTree.add(50)
+bTree.add(40)
+bTree.add( 60)
+bTree.add(20)
+bTree.add(100)
 
 print_tree(bTree)
