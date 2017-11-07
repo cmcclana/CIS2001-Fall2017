@@ -5,6 +5,21 @@ class BinarySearchTree(LinkedBinaryTree):
     def __init__(self):
         super().__init__()
 
+    def __iter__(self):
+        for item in self._in_order():
+            yield item
+
+    def _in_order(self, position = None):
+        if position is None:
+            position = self.root()
+        left = self.left(position)
+        if left is not None:
+            yield self._in_order( left )
+        yield position.element()
+        right = self.right(position)
+        if right is not None:
+            yield self._in_order( right )
+
     def add( self, item ):
         if self._root is None:
             self._root = self.Node(item)
